@@ -12,6 +12,9 @@ e.anonymous=true
 enable=e:option(Flag,"enable",translate("enable"))
 enable.rmempty=false
 
+enable=e:option(Flag,"ipv6",translate("ipv6"),translate("ipv6 mean"))
+enable.rmempty=false
+
 enable=e:option(Flag,"clean",translate("Clean Before Update"),translate("Clean Before Update mean"))
 enable.rmempty=false
 
@@ -23,6 +26,7 @@ iface=e:option(ListValue,"interface",translate("WAN-IP Source"),translate("Selec
 iface:value("",translate("Select WAN-IP Source"))
 iface:value("internet")
 iface:value("wan")
+iface:value("lan")
 
 iface.rmempty=false
 main=e:option(Value,"main_domain",translate("Main Domain"),translate("For example: test.github.com -> github.com"))
